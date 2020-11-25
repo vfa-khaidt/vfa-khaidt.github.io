@@ -3,17 +3,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Look That way</title>
     <style>
-        html {
-            margin: 0px;
-            height: 100%;
-            width: 100%;
-        }
-
-        body {
-            margin: 0px;
-            min-height: 100%;
-            width: 100%;
-        }
         .videoInsert {
             min-width: 10%;
             min-height: 10%;
@@ -23,14 +12,36 @@
             overflow: auto;
             object-fit: cover;
         }
+        .video-container {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+            .video-container video {
+                /* Make video to at least 100% wide and tall */
+                min-width: 100%;
+                min-height: 100%;
+                /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+                width: auto;
+                height: auto;
+                /* Center the video */
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
     </style>
 </head>
   <body>
 
-      <video width="160" height="160" class="videoInsert" autoplay="autoplay" playsinline muted loop>
-          <source src="video.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-      </video>
-  
+      <div class="video-container">
+          <video autoplay="autoplay" playsinline muted loop>
+              <source src="video.mp4" type="video/mp4">
+          </video>
+      </div>
   </body>
 </html>
