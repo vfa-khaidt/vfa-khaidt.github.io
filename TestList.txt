@@ -1,0 +1,1 @@
+{"list":[{"gameName":"Made You Look","storeLink":"https://apps.apple.com/US/app/id1529378633?l=en","imageUrls":["https://vfa-khaidt.github.io/index.html"]},{"gameName":"Ketchup Master","storeLink":"https://apps.apple.com/US/app/id1533609557?l=en","imageUrls":["https://vfa-khaidt.github.io/videoAds.html"]}]}
