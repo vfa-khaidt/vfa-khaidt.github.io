@@ -1,0 +1,55 @@
+﻿<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Look That way</title>
+    <style>
+        html {
+            min-height: 100%;
+            display: flex;
+        }
+
+        body {
+            flex: 1;
+        }
+        .videoInsert {
+            min-width: 10%;
+            min-height: 10%;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            overflow: auto;
+            object-fit: cover;
+        }
+        .video-container {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+            .video-container video {
+                /* Make video to at least 100% wide and tall */
+                min-width: 100%;
+                min-height: 100%;
+                /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+                width: auto;
+                height: auto;
+                /* Center the video */
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+    </style>
+</head>
+  <body>
+
+      <div class="video-container">
+          <video autoplay="autoplay" playsinline muted loop>
+              <source src="video.mp4" type="video/mp4">
+          </video>
+      </div>
+  </body>
+</html>

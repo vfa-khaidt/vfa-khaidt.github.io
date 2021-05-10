@@ -1,0 +1,1 @@
+{"list":[{"gameName":"Vacuum Run!","storeLink":"https://apps.apple.com/US/app/id1534815977","imageUrls":["https://vfa-khaidt.github.io/vacuum.mp4"]}]}

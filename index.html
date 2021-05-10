@@ -1,25 +1,22 @@
-﻿<html>
+<!DOCTYPE html>
+<html lang="en-us">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Look That way</title>
-    <style>
-        body, html {
-        }
-
-        .bg { /* The image used */
-            background-image: url("https://raw.githubusercontent.com/vfa-khaidt/Cross-Promo/master/MadeyouLook.png");
-            /* Full height */ width: 100%; /* Center and scale the image nicely */
-            height: 100%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            object-fit: fill;
-        }
-    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>ShoppingGame</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.javascript"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+        var gameInstance = UnityLoader.instantiate("gameContainer", "Build/PoiPoi_WebGL3.json", {onProgress: UnityProgress});
+    </script>
 </head>
 <body>
-
-    
-    <img src="https://raw.githubusercontent.com/vfa-khaidt/Cross-Promo/master/MadeyouLook.png" style="width: 100%; max-width: 300px; object-fit: cover; ">
+<div class="webgl-content">
+    <div id="gameContainer" style="width: 1080px; height: 1920px"></div>
+</div>
+<div class="simmer">template by: <a href="https://simmer.io" target="_blank">SIMMER.io</a></div>
+<script src="TemplateData/responsive.javascript"></script>
 </body>
 </html>
